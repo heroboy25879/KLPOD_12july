@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Content-->
+    <LinearLayout
+        android:background="@drawable/bg_board2"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+
+            android:textColor="#737171"
+            android:textSize="40dp"
+            android:text="Welcome to"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:textColor="#8d8b8b"
+            android:textSize="30dp"
+            android:text="POD"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--Logo-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logonew" />
+
+        <!--User Edittext-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+
+
+            <!--TxtField-->
+            <EditText
+                android:textColor="#8d8b8b"
+                android:id="@+id/edtFLogin_User"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User :"
+                android:background="@drawable/groupuser"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <!--Password Edittext-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+
+
+            <!--TxtField-->
+            <EditText
+                android:textColor="#8d8b8b"
+                android:background="@drawable/grouppass"
+                android:id="@+id/edtFLogin_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password :"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <!--Login-->
+        <Button
+            android:background="@drawable/btnlogin"
+            android:id="@+id/btnFLogin_Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="LOGIN"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
